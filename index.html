@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadMaxine</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/img/heart-icon.jpg">
+
+</head>
+
+<body>
+    <nav>
+        <div class="dropdown">
+            <button id="buttonOut"><img onclick="myFunction()" class="dropbtn" src="/img/list-outline.png"></button>
+            <ul id="myDropdown" class="dropdown-menu">
+                <li><a href="/aboutme.html">About Me</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+    </nav>
+    <article>
+        <div id="blogout">
+            <div id="blogin">
+                <h4>Somthing Somthing</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas accusantium molestias
+                    veritatis
+                    sapiente nobis dolores pariatur. Aspernatur quibusdam similique aliquid. Sapiente, obcaecati numquam
+                    aliquid
+                    est veniam iusto dignissimos provident! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis
+                    autem nobis nemo obcaecati eaque praesentium dolores sint cupiditate iure, dolore consequuntur
+                    assumenda,
+                    unde quos odio neque amet. Laboriosam, at repellendus. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing
+                    elit. Architecto eum iure laudantium explicabo, unde illum fugit praesentium recusandae. Nisi minima
+                    quaerat
+                    est doloribus dolore voluptates nemo a ad quis corporis!</p>
+            </div>
+        </div>
+    </article>
+
+
+    <div class="w3-display-container">
+
+        <div class="mySlides">
+            <img src="https://via.placeholder.com/600x400/ffade8/ff69d5?text=I'm+a+Picture" style="width:100%">
+            <div class="text">
+                <caption>it's a Pink Picture</caption>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="https://via.placeholder.com/600x400/93e6cc/44dbd6?text=I'm+a+Picture" style="width:100%">
+            <div class="text">
+                <caption>it's a Green Picture</caption>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="https://via.placeholder.com/600x400/ff977a/f57e29?text=I'm+a+Picture" style="width:100%">
+            <div class="text">
+                <caption>it's a Orange Picture</caption>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="https://via.placeholder.com/600x400/96b4fa/4565f7?text=I'm+a+Picture" style="width:100%">
+            <div class="text">
+                <caption>it's a Blue Picture</caption>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="https://via.placeholder.com/600x400/ff4a4a/ff0000?text=I'm+a+Picture" style="width:100%">
+            <div class="text">
+                <caption>it's a Red Picture</caption>
+            </div>
+
+
+        </div>
+        <div id="w3-buttontwo">
+            <button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-menu");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        <footer>
+            <h5>© Madxine | March 2023</h5>
+        </footer>
+</body>
+
+
+
+
+</html>

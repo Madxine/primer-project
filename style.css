@@ -1,0 +1,228 @@
+
+body{
+overflow:scroll;
+height :100%;
+display: flex;   
+flex-flow: column; 
+align-items: center;
+background-color: #5de0ce;
+opacity: 1;
+background-image:  linear-gradient(135deg, #fdd9fd 25%, transparent 25%), linear-gradient(225deg, #fdd9fd 25%, transparent 25%), linear-gradient(45deg, #fdd9fd 25%, transparent 25%), linear-gradient(315deg, #fdd9fd 25%, #5de0ce 25%);
+background-position:  17px 0, 17px 0, 0 0, 0 0;
+background-size: 34px 34px;
+background-repeat: repeat;
+padding:0%;
+margin: 0%;
+border: 0%;
+}
+
+nav{
+    background-color:#5de0ce;
+    top:0;
+	left:0;
+    width: 100%;
+    height: 50px;
+    position:fixed;
+  
+}
+
+#buttonOut{
+    padding: 0%;
+    margin: 0%;
+    border: 0cm;
+    height: 50px;
+    border-radius: 10%;
+
+}
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #5de0ce;
+    border-radius: 10%;
+}
+  
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #fdd9fd;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    border-radius: 10%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    padding: 0%;
+    margin: 0%;
+    border: 0cm;
+    display: none;
+    position: absolute;
+    background-color: #5de0ce;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10%;
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.dropdown-menu a:hover{
+    background-color: #fdd9fd;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.show {display: block;}
+
+#blogin{
+    padding: 0%;
+   margin: 10px;
+   border: 0cm;
+    overflow: scroll;
+    height: 45vh;
+    width: 90%;
+    overflow-x: hidden;
+}
+ #blogout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    height: 50vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    border-radius: 10%;
+
+ }       
+
+
+ #blogin::-webkit-scrollbar-track
+ {height: 495px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   border-radius: 10px;
+   background-color: #fffefe;
+ }
+ 
+ #blogin::-webkit-scrollbar
+ {
+    border-radius: 10px;
+   width: 12px;
+   background-color: rgba(255, 255, 255, .3);
+ }
+ #blogin::-webkit-scrollbar-corner{
+    opacity: 0%;
+ }
+ 
+ #blogin::-webkit-scrollbar-thumb
+ {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+   background-color: #ffcff8;
+ }
+
+
+.w3-display-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 100px;
+    padding:0%;
+    border: 0%;
+    height: 50vh;
+    width: 100%;
+    border-radius: 10%;
+    
+}
+
+
+.mySlides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 10px;   
+   width: 90%;
+   height:90%;
+   border-radius: 10%;
+   }
+   .mySlides img{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+.text{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}   
+w3-buttontwo{
+   
+    
+display: flex;
+align-items: center;
+}
+.w3-button{
+    margin-bottom: 30px;
+    background-color: #5de0ce;
+    color: #ffcff8;
+}
+
+/* .picturebutton{
+    display: flex;
+    justify-self:space-between;
+    margin: 0%;
+    padding: 0%;
+    border: 0cm;
+} */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: fixed;
+   bottom: 0%;
+   width:100%;
+   height:50px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #fdd9fd;
+   
+}
+
+
+@media only screen and (min-width:500px) {
+    .w3-display-container{
+       max-width: 500px;
+       
+        
+    }
+    .mySlides{
+        max-width: 470px;
+        max-height: 410px;
+    }
+    .w3-display-container img{
+        max-width: 300px;
+    }
+  #blogout{
+    max-width: 500px;
+  }
+}
